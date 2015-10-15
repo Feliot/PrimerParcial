@@ -3,7 +3,8 @@
 	require_once("clases/voto.php");
 	$arrayDevotos=voto::TraerTodoLosvotos();
 
- ?>
+ session_start();
+if(isset($_SESSION['registrado'])){  ?>
 <script type="text/javascript">
 $("#content").css("width", "900px");
 </script>
@@ -36,3 +37,6 @@ foreach ($arrayDevotos as $voto) {
 		 ?>
 	</tbody>
 </table>
+<?php }else{    echo"<h3>usted No está logeado. </h3>";?>  
+  <button onclick="MostarLogin()" class="btn btn-primary btn-lg   '" type="button"><span class="glyphicon glyphicon-home" >&nbsp;</span>Logearme</button>
+  <?php  }  ?>       

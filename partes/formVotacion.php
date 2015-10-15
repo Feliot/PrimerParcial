@@ -17,7 +17,7 @@ if(isset($_SESSION['registrado'])){  ?>
                 <input type="text" id="localidad" class="form-control" placeholder="Localidad" required="" autofocus="">
         <label for="direccion" class="sr-only" hidden>Provincia</label>
                 <input type="text" id="direccion" class="form-control" placeholder="Direccion" required="" autofocus="">
-        <select id="candidato">
+        <select  id="candidato">
           <option value="Candidato1">Candidato 1</option>
           <option value="Candidato2">Candidato 2</option>
           <option value="Candidato3">Candidato 3</option>
